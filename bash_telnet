@@ -1,0 +1,8 @@
+### One liner to check if remote port is open
+### this is for when you have nothing else to work with
+### only works with tcp
+> ref:- https://superuser.com/questions/621870/test-if-a-port-on-a-remote-system-is-reachable-without-telnet 
+
+```
+</dev/tcp/localhost/11211 && echo Port is open || echo Port is closed
+```
